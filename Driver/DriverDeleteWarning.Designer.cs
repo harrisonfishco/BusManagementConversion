@@ -34,8 +34,8 @@
             this.headerLabel = new System.Windows.Forms.Label();
             this.waringLabel = new System.Windows.Forms.Label();
             this.footerPanel = new System.Windows.Forms.Panel();
-            this.cancelButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel.SuspendLayout();
             this.headerPanel.SuspendLayout();
             this.footerPanel.SuspendLayout();
@@ -106,6 +106,16 @@
             this.footerPanel.Size = new System.Drawing.Size(794, 54);
             this.footerPanel.TabIndex = 2;
             // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(667, 13);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(118, 31);
+            this.deleteButton.TabIndex = 1;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.ok);
+            // 
             // cancelButton
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -118,16 +128,6 @@
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancel);
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.Location = new System.Drawing.Point(667, 13);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(118, 31);
-            this.deleteButton.TabIndex = 1;
-            this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.Click += new System.EventHandler(this.ok);
             // 
             // DriverDeleteWarning
             // 
