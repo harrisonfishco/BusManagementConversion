@@ -211,7 +211,7 @@
             this.dateField.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateField.Location = new System.Drawing.Point(20, 128);
             this.dateField.MaxSelectionCount = 1;
-            this.dateField.MinDate = new System.DateTime(2023, 5, 17, 0, 0, 0, 0);
+            this.dateField.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dateField.Name = "dateField";
             this.dateField.TabIndex = 3;
             // 
@@ -273,6 +273,7 @@
             this.cancelButton.TabIndex = 1;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancel);
             // 
             // okButton
             // 
@@ -284,6 +285,7 @@
             this.okButton.TabIndex = 0;
             this.okButton.Text = "Ok";
             this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.ok);
             // 
             // TourDialog
             // 

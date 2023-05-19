@@ -51,6 +51,11 @@ namespace Memoranda.Util
             year = int.Parse(split[2]);
         }
 
+        public DateTime toDateTime()
+        {
+            return new DateTime(year, month, day);
+        }
+
         public override string ToString()
         {
             return day + "/" + month + "/" + year;

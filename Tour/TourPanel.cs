@@ -56,7 +56,18 @@ namespace Memoranda.Tour
             {
                 TourDialog dialog = new TourDialog();
                 dialog.ShowDialog();
+            } 
+            else if(((ToolStripMenuItem)sender).Equals(editItem))
+            {
+                Tour tour = listbox.getSelectedTour();
+                TourDialog dialog = new TourDialog(tour.getID());
+                dialog.Show();
             }
+            else if(((ToolStripMenuItem)sender).Equals(removeItem)) {
+                TourDeleteWarning dialog = new TourDeleteWarning(listbox.getSelectedTour().getID());
+                dialog.ShowDialog();
+            }
+            refreshListBox();
         }
 
         private void listboxClick(object sender, MouseEventArgs e)

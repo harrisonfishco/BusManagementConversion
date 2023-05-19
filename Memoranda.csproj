@@ -188,6 +188,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tour\Tour.cs" />
+    <Compile Include="Tour\TourDeleteWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\TourDeleteWarning.Designer.cs">
+      <DependentUpon>TourDeleteWarning.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tour\TourDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </Compile>
     <EmbeddedResource Include="Route\RouteDialog.resx">
       <DependentUpon>RouteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\TourDeleteWarning.resx">
+      <DependentUpon>TourDeleteWarning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tour\TourDialog.resx">
       <DependentUpon>TourDialog.cs</DependentUpon>
