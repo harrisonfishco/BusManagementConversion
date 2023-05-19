@@ -65,7 +65,8 @@ namespace Memoranda.Route
             }
             else if(((ToolStripMenuItem)sender).Equals(removeItem))
             {
-
+                RouteDeleteWarning dialog = new RouteDeleteWarning(listbox.getSelectedRoute().getId());
+                dialog.ShowDialog();
             }
             refreshListBox();
         }
